@@ -38,7 +38,7 @@ function AboutCard() {
           <br />
           I'm open to job opportunities where I can contribute, learn, and grow.
           If you have a fitting opportunity, please feel free to contact Me
-          <Link to='/' className="z-50">
+          <Link to='/contact' className="z-50">
           <button className="mt-3 bg-purple-600 text-white py-2 px-4 rounded-lg flex items-center">
             <IoCallOutline className="me-2" />
             Contact Me

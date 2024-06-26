@@ -2,12 +2,11 @@ import { useEffect, useState } from 'react';
 import './App.css';
 import Footer from './component/Footer';
 import Navbar from './component/Navbar';
-import Particle from './component/Particle';
-import Pre from './component/Pre';
 import Projects from './component/Projects';
 import About from './component/about/About';
 import Home from './component/home/Home';
 import{BrowserRouter, Route, Routes} from "react-router-dom"
+import ContactMe from './component/ContactMe';
 
 
 function App() {
@@ -29,6 +28,7 @@ function App() {
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
         <Route path="/projects" element={<Projects />} />
+        <Route path="/contact" element={<ContactMe />} />
       </Routes>
       <Footer />
   {/* </div> */}

@@ -38,7 +38,7 @@ const Navbar = () => {
   return (
     <>
       <div
-        className={`bg-white text-menu-gray sticky top-0  ${
+        className={`bg-white text-menu-gray sticky top-0 z-50 px-2 md:px-8 ${
           navColour ? "sticky" : "navbar"
         }`}
       >
@@ -47,6 +47,7 @@ const Navbar = () => {
             <div className="flex-shrink-0">
               <Link to="/">
                 {/* <img src="/image/logoNew.png" alt="Brand Logo" width={128} height={64} /> */}
+                <p className="text-white">Md Shamim Akhter</p>
               </Link>
             </div>
             <div className="hidden md:flex items-center space-x-4">

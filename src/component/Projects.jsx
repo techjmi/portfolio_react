@@ -20,7 +20,7 @@ function Projects() {
           {projects.map((project, index) => (
             <div
               key={index}
-              className="rounded-md shadow-xl overflow-hidden hover:cursor-pointer transition-all duration-300 transform hover:scale-100 border-teal-500 hover:border-2 h-[400px] relative group"
+              className="rounded-md shadow-xl border-2 overflow-hidden hover:cursor-pointer transition-all duration-300 transform hover:scale-105 border-teal-500 hover:border-2 h-[400px] relative group"
             >
               <img
                 src={project.imgPath}
@@ -31,25 +31,25 @@ function Projects() {
                 <h2 className="text-xl font-bold mb-2 text-gray-400">{project.title}</h2>
                 <p className="text-slate-100 mb-4">{project.description}</p>
                 <div className="flex justify-between opacity-0 group-hover:opacity-100 transition-opacity duration-300 absolute bottom-4 left-4 right-4">
-                  <div
-                    href={project.ghLink}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="text-purple-600 hover:text-purple-700 bg-slate-100 rounded-sm px-2 py-0 flex items-center gap-1 shadow-md"
-                  >
-                    <BsGithub />
-                    GitHub
-                  </div>
-                  <div
-                    href={project.demoLink}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="text-purple-600 hover:text-purple-700  bg-slate-100 rounded-sm px-2 py-0 flex items-center gap-1 shadow-md"
-                  >
-                    <FaExternalLinkAlt />
-                    Demo
-                  </div>
-                </div>
+      <a
+        href={project.ghLink}
+        target="_blank"
+        rel="noopener noreferrer"
+        className="text-purple-600 hover:text-purple-700 bg-slate-100 rounded-sm px-2 py-0 flex items-center gap-1 shadow-md"
+      >
+        <BsGithub />
+        GitHub
+      </a>
+      <a
+        href={project.demoLink}
+        target="_blank"
+        rel="noopener noreferrer"
+        className="text-purple-600 hover:text-purple-700 bg-slate-100 rounded-sm px-2 py-0 flex items-center gap-1 shadow-md"
+      >
+        <FaExternalLinkAlt />
+        Demo
+      </a>
+    </div>
               </div>
             </div>
           ))}
