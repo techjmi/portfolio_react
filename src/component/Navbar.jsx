@@ -5,6 +5,7 @@ import { IoCallOutline } from "react-icons/io5";
 import { AiOutlineHome, AiOutlineUser } from "react-icons/ai";
 import { FaExternalLinkAlt } from "react-icons/fa";
 import { Button } from "flowbite-react";
+import profile from '../Assets/profileImg.jpg'
 // impor {Button}
 
 const Navbar = () => {
@@ -46,8 +47,8 @@ const Navbar = () => {
           <div className="flex justify-between items-center h-16">
             <div className="flex-shrink-0">
               <Link to="/">
-                {/* <img src="/image/logoNew.png" alt="Brand Logo" width={128} height={64} /> */}
-                <p className="text-white">Md Shamim Akhter</p>
+                <img src={profile} alt="Brand Logo" width={50} height={50} className="rounded-full py-1" />
+                {/* <p className="text-white">Md Shamim Akhter</p> */}
               </Link>
             </div>
             <div className="hidden md:flex items-center space-x-4">

@@ -6,13 +6,13 @@ const Footer = () => {
   const year = date.getFullYear();
 
   return (
-    <footer className="bg-gray-800 text-white py-4">
-      <div className="container mx-auto px-4">
+    <footer className="bg-gray-800 text-white py-4 md:py-8 backdrop-blur-lg">
+      <div className="container mx-auto px-4 w-full md:w-4/5">
         <div className="flex flex-col md:flex-row justify-between items-center">
           <div className="text-center md:text-left mb-4 md:mb-0">
             <h3 className="text-lg md:text-xl">
-              Made With <FaHeart className="inline" /> &nbsp;By{" "}
-              <span className="underline">Md Shamim Akhter</span>
+              Made With <FaHeart className="inline text-red-500" /> &nbsp;By
+              <span className="underline"> Md Shamim Akhter</span>
             </h3>
           </div>
           <div className="text-center mb-4 md:mb-0">
@@ -29,7 +29,7 @@ const Footer = () => {
                   rel="noopener noreferrer"
                   className="text-white"
                 >
-                  <FaGithub className="text-3xl" />
+                  <FaGithub className="text-3xl text-black" />
                 </a>
               </li>
               <li>
@@ -39,7 +39,7 @@ const Footer = () => {
                   rel="noopener noreferrer"
                   className="text-white"
                 >
-                  <FaLinkedinIn className="text-3xl" />
+                  <FaLinkedinIn className="text-3xl text-blue-700" />
                 </a>
               </li>
             </ul>

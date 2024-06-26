@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
-// import StarParticle from './Particle';
 import Particle from './Particle';
+import emailjs from 'emailjs-com';
 
 const ContactMe = () => {
   const [formData, setFormData] = useState({
@@ -15,9 +15,7 @@ const ContactMe = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    // Here you can handle form submission, e.g., send formData to backend
-    console.log(formData);
-    // Optionally reset form fields after submission
+    sendEmail(formData); // Pass formData to sendEmail function
     setFormData({
       name: '',
       email: '',
@@ -25,13 +23,34 @@ const ContactMe = () => {
     });
   };
 
+  // EmailJS code
+  const sendEmail = (formData) => {
+    const templateParams = {
+      from_name: formData.name, // Use formData.name for the sender's name
+      from_email: formData.email,
+      message: formData.message
+    };
+
+    emailjs.send(
+      "service_lkd103l", // EmailJS service ID
+      "template_76ystg8", // EmailJS template ID
+      templateParams, // Pass templateParams instead of formData directly
+      "mxULau1NOUGo0S1xx" // EmailJS user ID
+    )
+    .then((response) => {
+      console.log('SUCCESS!', response.status, response.text);
+    })
+    .catch((error) => {
+      console.error('FAILED...', error);
+    });
+  };
+
   return (
     <div className="min-h-screen flex flex-col items-center justify-center">
-      {/* <StarParticle /> */}
       <Particle />
-      <div className="rounded-lg  p-8 max-w-md w-full">
+      <div className="rounded-lg p-8 max-w-md w-full">
         <h2 className="text-3xl font-semibold text-center mb-4 text-gray-300">Contact Me</h2>
-        <form onSubmit={handleSubmit} className=''>
+        <form onSubmit={handleSubmit}>
           <div className="mb-4">
             <label htmlFor="name" className="block text-gray-400 font-bold mb-2">Name</label>
             <input
