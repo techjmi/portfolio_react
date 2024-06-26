@@ -55,7 +55,7 @@ function Home() {
         </div>
       </div>
       <Home2 />
-      <Service />
+      {/* <Service /> */}
     </section>
   );
 }
