@@ -4,10 +4,10 @@ import { Link } from "react-router-dom";
 
 function AboutCard() {
   return (
-    <div className="rounded-lg  text-gray-50">
+    <div className="rounded-lg  text-gray-50 backdrop-blur-md">
       <blockquote className="text-lg font-medium mb-4 text-gray-800">
         <p className="text-justify  text-gray-50">
-          Greetings, I'm
+          Greetings, I'm &nbsp;
           <span className="text-purple-600">Md Shamim Akhter</span>, a budding
           MERN (MongoDB, Express.js, React, Node.js) developer with a strong
           appetite for learning and a knack for problem-solving.

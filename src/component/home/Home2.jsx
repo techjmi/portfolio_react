@@ -8,7 +8,7 @@ const url="https://ideogram.ai/assets/image/lossless/response/hc3aEtVmTC6eWxylks
 const Home2 = () => {
   return (
     <section>
-      <div className="container mx-auto mt-5 md:mt-10">
+      <div className="container mx-auto mt-5 md:mt-10 backdrop-blur-md">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
           <div className="px-5 md:px-10">
             <h1 className="text-xl md:text-3xl font-bold mb-4 text-slate-50 text-center md:text-start">

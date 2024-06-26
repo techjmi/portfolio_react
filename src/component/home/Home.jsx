@@ -1,17 +1,28 @@
 import React from "react";
-// import { Button } from "react-bootstrap";
-// import Particle from "../Particle";
-// import Home2 from "./Home2";
-// import Type from "./Type";
 import { FaArrowDown } from "react-icons/fa";
 import { Button } from "flowbite-react";
 import Particle from "../Particle";
 import TypeWritter from "./TypeWritter";
 import Home2 from "./Home2";
 import Service from "./Service";
-// import profilePic from "../assets/profile-pic.jpg";
-
+import resume from '../../Assets/Shamim_Resume.pdf'
 function Home() {
+  const handleDownload = () => {
+    // const pdfUrl = process.env.PUBLIC_URL + './Shamim_Resume.pdf'; 
+    const pdfUrl=resume
+    console.log(pdfUrl)
+    const a = document.createElement('a');
+    a.style.display = 'none';
+    a.href = pdfUrl;
+    a.download = 'Shamim_Resume.pdf';
+    // Append the anchor element to the body
+    document.body.appendChild(a);
+    // Trigger the click event of the anchor element
+    a.click();
+    // Clean up
+    document.body.removeChild(a);
+  };
+
   const url =
     "https://ideogram.ai/assets/image/lossless/response/ya3Qak5IRU-nwkWHJa63Fw";
 
@@ -38,9 +49,9 @@ function Home() {
               <div className="text-white text-2xl md:text-3xl mt-2 md:mt-4 mb-6 md:mb-8">
                 <TypeWritter />
               </div>
-              <Button className="bg-blue-500 flex gap:2 justify-center items-center hover:bg-blue-700 text-white font-medium mx-auto md:mx-0 px-1 rounded focus:outline-none focus:shadow-outline mb-2 md:text-center">
+              <Button className=" bg-blue-500 flex gap:2 justify-center items-center hover:bg-blue-700 text-white font-medium mx-auto md:mx-0 px-1 rounded focus:outline-none focus:shadow-outline mb-2 md:text-center" onClick={handleDownload}>
                 <FaArrowDown className="mr-2 mt-1"/>
-                <div> Download Cv</div>
+               Download
               </Button>
             </div>
             <div className="md:pl-10">

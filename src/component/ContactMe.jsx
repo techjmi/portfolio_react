@@ -8,7 +8,7 @@ const ContactMe = () => {
     email: '',
     message: ''
   });
-
+const[loading,setLoading]= useState(true)
   const handleChange = (e) => {
     setFormData({ ...formData, [e.target.id]: e.target.value });
   };
@@ -20,30 +20,31 @@ const ContactMe = () => {
       name: '',
       email: '',
       message: ''
-    });
+    })
+    alert("Message Sent Successfully")
   };
-
   // EmailJS code
-  const sendEmail = (formData) => {
+  
+  const sendEmail = async (formData) => {
     const templateParams = {
-      from_name: formData.name, // Use formData.name for the sender's name
+      from_name: formData.name,
       from_email: formData.email,
       message: formData.message
     };
-
-    emailjs.send(
-      "service_lkd103l", // EmailJS service ID
-      "template_76ystg8", // EmailJS template ID
-      templateParams, // Pass templateParams instead of formData directly
-      "mxULau1NOUGo0S1xx" // EmailJS user ID
-    )
-    .then((response) => {
+  
+    try {
+      const response = await emailjs.send(
+        "service_lkd103l", // EmailJS service ID
+        "template_76ystg8", // EmailJS template ID
+        templateParams, // Pass templateParams instead of formData directly
+        "mxULau1NOUGo0S1xx" // EmailJS user ID
+      );
       console.log('SUCCESS!', response.status, response.text);
-    })
-    .catch((error) => {
+    } catch (error) {
       console.error('FAILED...', error);
-    });
+    }
   };
+  
 
   return (
     <div className="min-h-screen flex flex-col items-center justify-center">

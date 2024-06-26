@@ -47,7 +47,7 @@ const Navbar = () => {
           <div className="flex justify-between items-center h-16">
             <div className="flex-shrink-0">
               <Link to="/">
-                <img src={profile} alt="Brand Logo" width={50} height={50} className="rounded-full py-1" />
+                <img src={profile} alt="Brand Logo" width={50} height={50} className="rounded-full" />
                 {/* <p className="text-white">Md Shamim Akhter</p> */}
               </Link>
             </div>

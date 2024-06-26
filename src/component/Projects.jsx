@@ -1,7 +1,6 @@
 import React from "react";
 import projects from "../constant/projects";
 import Particle from "./Particle";
-import { Button, Card } from "flowbite-react";
 import { FaExternalLinkAlt } from "react-icons/fa";
 import { BsGithub } from "react-icons/bs";
 
@@ -16,7 +15,7 @@ function Projects() {
         <p className="text-white text-center mb-8">
           Here are a few projects I've worked on recently.
         </p>
-        <div className="container mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
+        <div className="container mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 backdrop-blur-md">
           {projects.map((project, index) => (
             <div
               key={index}
