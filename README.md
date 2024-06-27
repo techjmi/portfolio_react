@@ -47,7 +47,7 @@ To run this project on your local machine, follow these steps:
 
 1. **Clone the repository:**
     ```bash
-    git clone https://github.com/techjmi/react-portfolio.git
+    git clone https://github.com/techjmi/portfolio_react.git
     cd portfolio
     ```
 
