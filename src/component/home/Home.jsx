@@ -51,7 +51,7 @@ function Home() {
               </div>
               <Button className=" bg-blue-500 flex gap:2 justify-center items-center hover:bg-blue-700 text-white font-medium mx-auto md:mx-0 px-1 rounded focus:outline-none focus:shadow-outline mb-2 md:text-center" onClick={handleDownload}>
                 <FaArrowDown className="mr-2 mt-1"/>
-               Download
+               Download Cv
               </Button>
             </div>
             <div className="md:pl-10">
