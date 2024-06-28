@@ -3,12 +3,13 @@ import { Link } from "react-router-dom";
 import { ImDisplay } from "react-icons/im";
 import { IoCallOutline } from "react-icons/io5";
 import { AiOutlineHome, AiOutlineUser } from "react-icons/ai";
-import { FaExternalLinkAlt } from "react-icons/fa";
+import { FaExternalLinkAlt, FaMoon, FaSun } from "react-icons/fa";
 import { Button } from "flowbite-react";
 import profile from '../Assets/profileImg.jpg'
+import { LiaLightbulb } from "react-icons/lia";
 // impor {Button}
 
-const Navbar = () => {
+const Navbar = ({dark, handleDarkMode}) => {
   const [expand, setExpand] = useState(false);
   const [navColour, setNavColour] = useState(false);
 
@@ -39,7 +40,7 @@ const Navbar = () => {
   return (
     <>
       <div
-        className={`bg-white text-menu-gray sticky top-0 z-50 px-2 md:px-8 ${
+        className={`text-gray-900 sticky top-0 z-50 px-2 md:px-8 ${
           navColour ? "sticky" : "navbar"
         }`}
       >
@@ -86,6 +87,15 @@ const Navbar = () => {
                 Blogs
               </a>
             </div>
+            {/* <button
+  onClick={() =>
+    handleDarkMode((previousDarkMode) => !previousDarkMode)
+  }
+  className="save button"
+>
+  {dark ? <FaMoon /> : <FaSun />} 
+</button> */}
+          
             <div className="hidden md:block">
               <Link to="/contact" className="text-decoration-none">
                 <button

@@ -11,7 +11,7 @@ import ContactMe from './component/ContactMe';
 
 function App() {
   const [load, upadateLoad] = useState(true);
-
+  const[dark,setDark]= useState(false)
   useEffect(() => {
     const timer = setTimeout(() => {
       upadateLoad(false);
@@ -20,10 +20,10 @@ function App() {
     return () => clearTimeout(timer);
   }, []);
   return (
-  <>
+  <div className={` app${dark&&"dark_mode"}`}>
   {/* <Pre load={load}/> */}
   {/* <div className="App" id={load ? "no-scroll" : "scroll"}> */}
-  <Navbar />
+  <Navbar dark={dark} handleDarkMode={setDark}/>
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
@@ -32,7 +32,7 @@ function App() {
       </Routes>
       <Footer />
   {/* </div> */}
-  </>
+  </div>
   );
 }
 

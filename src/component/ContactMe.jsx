@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import Particle from './Particle';
-import emailjs from 'emailjs-com';
+import axios from 'axios';
 
 const ContactMe = () => {
   const [formData, setFormData] = useState({
@@ -8,43 +8,33 @@ const ContactMe = () => {
     email: '',
     message: ''
   });
-const[loading,setLoading]= useState(true)
+  const [submitted, setSubmitted] = useState(false);
+
   const handleChange = (e) => {
     setFormData({ ...formData, [e.target.id]: e.target.value });
   };
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
-    sendEmail(formData); // Pass formData to sendEmail function
-    setFormData({
-      name: '',
-      email: '',
-      message: ''
-    })
-    alert("Message Sent Successfully")
-  };
-  // EmailJS code
-  
-  const sendEmail = async (formData) => {
-    const templateParams = {
-      from_name: formData.name,
-      from_email: formData.email,
-      message: formData.message
-    };
-  
     try {
-      const response = await emailjs.send(
-        "service_lkd103l", // EmailJS service ID
-        "template_76ystg8", // EmailJS template ID
-        templateParams, // Pass templateParams instead of formData directly
-        "mxULau1NOUGo0S1xx" // EmailJS user ID
-      );
-      console.log('SUCCESS!', response.status, response.text);
+      const response = await axios.post('https://formspree.io/f/myzggrwe', formData);
+      if (response.status === 200) {
+        setSubmitted(true);
+        alert('Message sent successfully!');
+        setFormData({
+          name: '',
+          email: '',
+          message: ''
+        });
+      } else {
+        console.error('Failed to send message:', response.statusText);
+        alert('Failed to send message. Please try again later.');
+      }
     } catch (error) {
-      console.error('FAILED...', error);
+      console.error('Error sending message:', error.message);
+      alert('Error sending message. Please try again later.');
     }
   };
-  
 
   return (
     <div className="min-h-screen flex flex-col items-center justify-center">
