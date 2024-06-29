@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { FaArrowDown } from "react-icons/fa";
 import { Button } from "flowbite-react";
 import Particle from "../Particle";
@@ -6,7 +6,9 @@ import TypeWritter from "./TypeWritter";
 import Home2 from "./Home2";
 import Service from "./Service";
 import resume from '../../Assets/Shamim_Resume.pdf'
+import CheckOut from "../CheckOut";
 function Home() {
+  const[ad,setAd]= useState(false)
   const handleDownload = () => {
     // const pdfUrl = process.env.PUBLIC_URL + './Shamim_Resume.pdf'; 
     const pdfUrl=resume
@@ -26,9 +28,24 @@ function Home() {
   const url =
     "https://ideogram.ai/assets/image/lossless/response/ya3Qak5IRU-nwkWHJa63Fw";
 
+    useEffect(()=>{
+      const timer= setTimeout(()=>{
+        setAd(true)
+
+      },3000)
+      return () => clearTimeout(timer);
+    },[])
+const handleClosed=()=>{
+  setAd(false)
+}
   return (
     <section className="">
       <Particle />
+      {ad && (
+        <div className="overlay">
+          <CheckOut ad={ad} handleClosed={handleClosed} />
+        </div>
+      )}
       <div className="">
         <div className="container mx-auto px-1 md:px-4 py-10 md:py-20" style={{ pointerEvents: "auto" }}>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-4 items-center">
