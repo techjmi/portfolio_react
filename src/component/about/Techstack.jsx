@@ -8,12 +8,17 @@ import {
   DiGithubBadge,
   DiCss3,
   DiHtml5,
+  DiBootstrap,
+  
 } from "react-icons/di";
 import {
   SiFirebase,
   SiNextdotjs,
   SiTailwindcss,
   SiJsonwebtokens,
+  SiExpress,
+  
+  
 } from "react-icons/si";
 import { FaReact } from "react-icons/fa";
 
@@ -26,12 +31,13 @@ function Techstack() {
     { icon: DiJavascript1, name: "JavaScript", color: "bg-indigo-400" },
     { icon: DiReact, name: "React.js", color: "bg-purple-400" },
     { icon: FaReact, name: "React Native", color: "bg-pink-400" },
+    { icon: SiTailwindcss, name: "Tailwind CSS", color: "bg-cyan-400" },
     { icon: DiNodejs, name: "Node.js", color: "bg-orange-400" },
     { icon: DiMongodb, name: "MongoDB", color: "bg-teal-400" },
-    { icon: SiTailwindcss, name: "Tailwind CSS", color: "bg-cyan-400" },
     { icon: SiJsonwebtokens, name: "JWT", color: "bg-blue-400" },
     { icon: SiNextdotjs, name: "Next.js", color: "bg-gray-400" },
     { icon: SiFirebase, name: "Firebase", color: "bg-yellow-400" },
+    { icon: SiExpress, name: "Expressjs", color: "bg-gray-400" },
   ];
 
   return (

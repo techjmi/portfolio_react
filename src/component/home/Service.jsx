@@ -7,7 +7,7 @@ const Service = () => {
         What I Offer
       </p>
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6">
-        <div className="shadow-lg border-2 rounded-lg backdrop-blur-md hover:scale-105 transition-transform duration-300 p-4 bg-blue-500">
+        <div className="card animated-border shadow-lg border-2 rounded-lg backdrop-blur-md hover:scale-105 transition-transform duration-300 p-4 bg-blue-500">
           <p className="font-semibold text-lg mb-2">Web Development</p>
           <p>
             I provide professional web development services, building responsive
@@ -15,7 +15,7 @@ const Service = () => {
             back-end, I've got you covered.
           </p>
         </div>
-        <div className="shadow-lg border-2 rounded-lg backdrop-blur-md hover:scale-105 transition-transform duration-300 p-4 bg-green-500">
+        <div className="   shadow-lg border-2 rounded-lg backdrop-blur-md hover:scale-105 transition-transform duration-300 p-4 bg-green-500">
           <p className="font-semibold text-lg mb-2">ReactJS Support</p>
           <p>
             Get expert support for your ReactJS projects, including code
@@ -23,7 +23,7 @@ const Service = () => {
             React applications robust and efficient.
           </p>
         </div>
-        <div className="shadow-lg border-2 rounded-lg backdrop-blur-md hover:scale-105 transition-transform duration-300 p-4 bg-purple-500">
+        <div className="  shadow-lg border-2 rounded-lg backdrop-blur-md hover:scale-105 transition-transform duration-300 p-4 bg-purple-500">
           <p className="font-semibold text-lg mb-2">Online Help</p>
           <p>
             Need assistance with your online presence? I offer comprehensive
@@ -31,7 +31,7 @@ const Service = () => {
             to keep your site running smoothly.
           </p>
         </div>
-        <div className="shadow-lg border-2 rounded-lg backdrop-blur-md hover:scale-105 transition-transform duration-300 p-4 bg-red-500">
+        <div className=" shadow-lg border-2 rounded-lg backdrop-blur-md hover:scale-105 transition-transform duration-300 p-4 bg-red-500">
           <p className="font-semibold text-lg mb-2">Technical Support</p>
           <p>
             Facing technical issues? I provide reliable technical support to

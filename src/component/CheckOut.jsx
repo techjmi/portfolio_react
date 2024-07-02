@@ -1,6 +1,6 @@
 import React from 'react';
 import { FaExternalLinkAlt } from 'react-icons/fa';
-import { RiCloseLine } from 'react-icons/ri'; // Assuming you meant to use RiCloseLine for the cross icon
+import { RiCloseLine } from 'react-icons/ri'; 
 
 const CheckOut = ({ handleClosed }) => {
   return (

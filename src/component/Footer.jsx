@@ -1,5 +1,5 @@
 import React from "react";
-import { FaGithub, FaLinkedinIn, FaHeart } from "react-icons/fa";
+import { FaGithub, FaLinkedinIn, FaEnvelope, FaHeart } from "react-icons/fa";
 
 const Footer = () => {
   const date = new Date();
@@ -40,6 +40,14 @@ const Footer = () => {
                   className="text-white"
                 >
                   <FaLinkedinIn className="text-3xl text-blue-700" />
+                </a>
+              </li>
+              <li>
+                <a
+                  href="mailto:tufailjmi786@gmail.com"
+                  className="text-white"
+                >
+                  <FaEnvelope className="text-3xl text-yellow-500" />
                 </a>
               </li>
             </ul>
