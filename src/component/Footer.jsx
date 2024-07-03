@@ -1,5 +1,6 @@
 import React from "react";
-import { FaGithub, FaLinkedinIn, FaEnvelope, FaHeart } from "react-icons/fa";
+import { BsDribbble, BsFacebook, BsGithub, BsInstagram, BsLinkedin } from "react-icons/bs";
+import { FaHeart } from "react-icons/fa";
 
 const Footer = () => {
   const date = new Date();
@@ -22,34 +23,39 @@ const Footer = () => {
           </div>
           <div className="text-center md:text-right">
             <ul className="flex space-x-4">
-              <li>
-                <a
-                  href="https://github.com/techjmi"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="text-white"
-                >
-                  <FaGithub className="text-3xl text-black" />
-                </a>
-              </li>
-              <li>
-                <a
-                  href="https://www.linkedin.com/in/md-shamim-akhter-b12624193?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="text-white"
-                >
-                  <FaLinkedinIn className="text-3xl text-blue-700" />
-                </a>
-              </li>
-              <li>
-                <a
-                  href="mailto:tufailjmi786@gmail.com"
-                  className="text-white"
-                >
-                  <FaEnvelope className="text-3xl text-yellow-500" />
-                </a>
-              </li>
+            <a
+    href="https://www.facebook.com/profile.php?id=100047398065321"
+    target="_blank"
+    rel="noopener noreferrer"
+    className="inline-flex items-center justify-center h-10 w-10 rounded-full bg-blue-600 text-white shadow-lg hover:bg-blue-700 hover:shadow-xl transition duration-300 transform hover:scale-110"
+  >
+    <BsFacebook size='1.5em'/>
+  </a>
+  <a
+    href="https://www.instagram.com/mernvibes/"
+    target="_blank"
+    rel="noopener noreferrer"
+    className="inline-flex items-center justify-center h-10 w-10 rounded-full bg-pink-600 text-white shadow-lg hover:bg-pink-700 hover:shadow-xl transition duration-300 transform hover:scale-110"
+  >
+    <BsInstagram size='1.5em'/>
+  </a>
+  <a
+    href="https://github.com/techjmi"
+    target="_blank"
+    rel="noopener noreferrer"
+    className="inline-flex items-center justify-center h-10 w-10 rounded-full bg-gray-800 text-white shadow-lg hover:bg-gray-900 hover:shadow-xl transition duration-300 transform hover:scale-110"
+  >
+    <BsGithub size='1.5em'/>
+  </a>
+  <a
+    href="www.linkedin.com/in/md-shamim-akhter-b12624193"
+    target="_blank"
+    rel="noopener noreferrer"
+    className="inline-flex items-center justify-center h-10 w-10 rounded-full bg-red-600 text-white shadow-lg hover:bg-red-700 hover:shadow-xl transition duration-300 transform hover:scale-110"
+  >
+    <BsLinkedin size='1.5em'/>
+  </a>
+              
             </ul>
           </div>
         </div>

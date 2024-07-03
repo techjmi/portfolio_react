@@ -4,49 +4,65 @@ import flipkart from "../Assets/Projects/flipkart.png";
 import notes from "../Assets/Projects/notes.png";
 import recipe from "../Assets/Projects/reciep.png";
 import food from '../Assets/Projects/food.png'
+import portfolio from '../Assets/Projects/portfolio.png'
+import todo from '../Assets/Projects/todo.png'
 
 const projects = [
   {
     imgPath: blog,
     title: "Blog Application",
-    description: "A blog application built with the MERN stack (MongoDB, Express, React, Node.js). This application allows users to create, read, update, and delete blog posts. It features user authentication, rich text editor, and responsive design, providing a seamless blogging experience.",
+    description: "A MERN stack application for creating, editing, and managing blog posts with user authentication and a rich text editor.",
     ghLink: "https://github.com/techjmi/blog__mern",
     demoLink: "https://blog-mern-cfpm.onrender.com/",
   },
   {
+    imgPath: portfolio, 
+    title: "Portfolio in ReactJS",
+    description: "A personal portfolio website built with React.js to showcase my projects, skills, and experience. It includes sections for about me, projects, and contact information.",
+    ghLink: "https://github.com/techjmi/portfolio_react",
+    demoLink: "https://shamim-portfolio-u1yp.onrender.com/",
+  },
+  {
     imgPath: food,
     title: "Food Web Application",
-    description: "A food ordering web application built using the MERN stack. Users can browse through various food items, add them to their cart, and place orders. The application includes features like user authentication, order tracking, and a secure payment gateway integration.",
+    description: "An e-commerce web app built with MERN stack for food ordering, featuring user authentication, order tracking, and payment integration.",
     ghLink: "https://github.com/techjmi/food-web",
     demoLink: "https://food-application-web-tios.onrender.com/",
   },
   {
     imgPath: recipe,
     title: "Recipe Search Application",
-    description: "A recipe search application built using the Forkify API. Users can search for recipes by ingredients, view detailed instructions, and save their favorite recipes. The application provides an intuitive user interface and leverages modern JavaScript practices.",
+    description: "A recipe search app using the Forkify API. Search recipes by ingredients, view instructions, and save favorites.",
     ghLink: "https://github.com/techjmi/Recipe_Search",
     demoLink: "https://brilliant-sprite-34b3f9.netlify.app/",
   },
   {
     imgPath: notes,
     title: "Notes App",
-    description: "A Notes App built with React.js that allows users to create, edit, and delete notes. The app features a sleek user interface, local storage for data persistence, and supports Markdown syntax for formatting notes.",
+    description: "A notes app built with React.js for creating, editing, and organizing notes with Markdown support and local storage.",
     ghLink: "https://github.com/techjmi/notes-app",
     demoLink: "https://notes-react-sr48.onrender.com/",
   },
   {
     imgPath: curd,
-    title: "CRUD Application with Redux Thunk",
-    description: "A CRUD application built with React.js and Redux Thunk middleware. This application demonstrates state management using Redux and asynchronous actions with Thunk. It allows users to perform create, read, update, and delete operations efficiently.",
+    title: "CRUD Application,Redux",
+    description: "A React.js CRUD app with Redux Thunk for asynchronous state management, demonstrating CRUD operations.",
     ghLink: "https://github.com/techjmi/Redux-toolkit-thunk",
     demoLink: "https://redux-toolkit-thunk.onrender.com/",
   },
   {
     imgPath: flipkart,
     title: "Flipkart Clone",
-    description: "A clone of the popular e-commerce website Flipkart built with React.js. The application replicates key features like product listings, user authentication, cart management, and checkout process, providing a comprehensive understanding of e-commerce functionalities.",
+    description: "A clone of Flipkart using React.js, featuring product listings, user authentication, cart management, and checkout.",
     ghLink: "https://github.com/techjmi/flipkart-clone",
     demoLink: "https://flipkart-frontend-50y3.onrender.com/",
+  },
+  {
+    imgPath: todo,
+    title: "To-Do List App",
+    description: "A to-do list application built with React.js and local storage. Users can add, edit, delete, and mark tasks as completed",
+    ghLink: "https://github.com/techjmi/Todo-Application",
+    demoLink: "https://astounding-pothos-9baa22.netlify.app/", 
   },
 ];
 
