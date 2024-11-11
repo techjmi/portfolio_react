@@ -5,7 +5,7 @@ import Particle from "../Particle";
 import TypeWritter from "./TypeWritter";
 import Home2 from "./Home2";
 import Service from "./Service";
-import resume from '../../Assets/Shamim_Resume.pdf'
+import resume from '../../Assets/Md_Shamim_Resume.pdf'
 import CheckOut from "../CheckOut";
 function Home() {
   const[ad,setAd]= useState(false)

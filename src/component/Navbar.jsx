@@ -3,11 +3,9 @@ import { Link } from "react-router-dom";
 import { ImDisplay } from "react-icons/im";
 import { IoCallOutline } from "react-icons/io5";
 import { AiOutlineHome, AiOutlineUser } from "react-icons/ai";
-import { FaExternalLinkAlt, FaMoon, FaSun } from "react-icons/fa";
+import { FaExternalLinkAlt,} from "react-icons/fa";
 import { Button } from "flowbite-react";
 import profile from '../Assets/profileImg.jpg'
-import { LiaLightbulb } from "react-icons/lia";
-// impor {Button}
 
 const Navbar = ({dark, handleDarkMode}) => {
   const [expand, setExpand] = useState(false);
