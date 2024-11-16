@@ -71,11 +71,11 @@ const handleClosed=()=>{
                Download Cv
               </Button>
             </div>
-            <div className="md:pl-10">
+            <div className="justify-self-center md:justify-self-end">
               <img
-                src={url}
+                src='home1.webp'
                 alt="home pic"
-                className="w-full md:max-w-lg mx-auto"
+                className="w-10/12 max-w-md aspect-auto rounded-md"
                 style={{ maxHeight: "450px" }}
               />
             </div>
