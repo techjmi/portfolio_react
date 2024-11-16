@@ -53,7 +53,7 @@ const Home2 = () => {
       </div>
 
       {/* Image Section */}
-      <div className="justify-self-center md:justify-self-end">
+      <div className="justify-self-center md:justify-self-end ms-12">
         <img src={url} className="w-10/12 max-w-md aspect-auto rounded-md" alt="avatar" />
       </div>
     </div>

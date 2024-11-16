@@ -28,7 +28,7 @@ const Footer = () => {
             </h3>
           </div>
           <div className="text-center md:text-right">
-          <ul className="flex space-x-4">
+          <ul className="flex space-x-4 ">
   {/* Facebook */}
   <a
     href="https://www.facebook.com/profile.php?id=100047398065321"

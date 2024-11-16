@@ -71,7 +71,7 @@ const handleClosed=()=>{
                Download Cv
               </Button>
             </div>
-            <div className="justify-self-center md:justify-self-end">
+            <div className="justify-self-center md:justify-self-end ms-12">
               <img
                 src='home1.webp'
                 alt="home pic"
