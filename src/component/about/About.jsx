@@ -7,7 +7,7 @@ import Particle from "../Particle";
 import AboutCard from "./AboutCard";
 import Techstack from "./Techstack";
 const url =
-  "https://ideogram.ai/assets/image/lossless/response/gu9ojH1GTBG5IlmNm8a-LQ";
+  "https://ideogram.ai/assets/progressive-image/balanced/response/MLdW1odZT5ipL482v7pobg";
 
 const About = () => {
   return (
@@ -25,7 +25,7 @@ const About = () => {
             <img
               src={url}
               alt="about"
-              className="w-full md:max-w-md mx-auto md:mx-0"
+              className="w-10/12 max-w-md aspect-auto rounded-md ml-6"
             />
           </div>
         </div>

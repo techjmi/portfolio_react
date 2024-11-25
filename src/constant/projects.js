@@ -6,6 +6,7 @@ import recipe from "../Assets/Projects/reciep.png";
 import food from '../Assets/Projects/food.png'
 import portfolio from '../Assets/Projects/portfolio.png'
 import todo from '../Assets/Projects/todo.png'
+import emp from '../Assets/Projects/emp.png'
 
 const projects = [
   {
@@ -50,12 +51,19 @@ const projects = [
     ghLink: "https://github.com/techjmi/Redux-toolkit-thunk",
     demoLink: "https://redux-toolkit-thunk.onrender.com/",
   },
+  // {
+  //   imgPath: flipkart,
+  //   title: "Flipkart Clone",
+  //   description: "A clone of Flipkart using React.js, featuring product listings, user authentication, cart management, and checkout.",
+  //   ghLink: "https://github.com/techjmi/flipkart-clone",
+  //   demoLink: "https://flipkart-frontend-50y3.onrender.com/",
+  // },
   {
-    imgPath: flipkart,
-    title: "Flipkart Clone",
-    description: "A clone of Flipkart using React.js, featuring product listings, user authentication, cart management, and checkout.",
-    ghLink: "https://github.com/techjmi/flipkart-clone",
-    demoLink: "https://flipkart-frontend-50y3.onrender.com/",
+    imgPath: emp,
+    title: "Employee Management System with MERN Stack",
+    description: "A full-stack employee management system built with the MERN stack. Features include employee creation, editing, deletion, and role-based access control for efficient management",
+    ghLink: "https://github.com/techjmi/Deals_front",
+    demoLink: "https://deals-front.onrender.com/", 
   },
   {
     imgPath: todo,
